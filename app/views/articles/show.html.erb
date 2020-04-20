@@ -7,7 +7,9 @@
   <% end %>
 </p>
 
-<p><%= image_tag @article.image.url, class: "article-img" %></p>
+<% if @article.image.exists? %>
+  <%= image_tag @article.image.url, class: "article-img" %><br/>
+<% end %>
 
 <p><%= @article.body %></p>
 
