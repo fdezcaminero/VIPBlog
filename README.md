@@ -1,6 +1,6 @@
 ## Blog APP
 
-It's impressive how easy it is to create such a complex project by using Ruby on Rails
+- It's impressive how easy it is to create such a complex project by using Ruby on Rails
 
 
 ## Built With
