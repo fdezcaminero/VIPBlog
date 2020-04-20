@@ -1,19 +1,18 @@
 class TagsController < ApplicationController
-    def index
-        @tags = Tag.all
-    end
+  def index
+    @tags = Tag.all
+  end
 
-    def show
-        @tag = Tag.find(params[:id])
-    end
-      
-    def destroy
-        @tag = Tag.find(params[:id])
-        @tag.destroy
+  def show
+    @tag = Tag.find(params[:id])
+  end
 
-        flash.notice = "Tag '#{@tag.name}' Deleted!"  
+  def destroy
+    @tag = Tag.find(params[:id])
+    @tag.destroy
 
-        redirect_to action: "index"
-    end
+    flash.notice = "Tag '#{@tag.name}' Deleted!"
 
+    redirect_to action: 'index'
+  end
 end
